@@ -1,17 +1,20 @@
 module soc_top_tb();
 
-logic clk;
+	// Clock
+	logic clk;
 
-initial begin
-	clk = 1'b1;
-end
+	
+	initial begin
+		clk = 1'b1;
+	end
 
-always begin
-	#1 clk = ~clk;
-end
+	always begin
+		#1 clk = ~clk;
+	end
 
-wire isp_uart_tx, vga_hsync, vga_vsync;
-wire [ 2:0] vga_pixel;
+	
+	wire isp_uart_tx, vga_hsync, vga_vsync;
+	wire [ 2:0] vga_pixel;
 
 soc_top soc_inst(
     .clk              ( clk          ),
@@ -24,8 +27,9 @@ soc_top soc_inst(
     .vga_blue         ( vga_pixel[0] )
 );
 
+
 initial begin
 	#1000 $stop;
-end
+end 
 
 endmodule : soc_top_tb

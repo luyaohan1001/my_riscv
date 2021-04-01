@@ -24,6 +24,8 @@ soc_top soc_inst(
     .vga_blue         ( vga_pixel[0] )
 );
 
-initial #1000 $stop;
+initial begin
+	#1000 $stop;
+end 
 
 endmodule : soc_top_tb
