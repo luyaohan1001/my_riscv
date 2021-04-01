@@ -55,7 +55,7 @@ core_top core_top_inst(
 
 
 
-// ?Œ‡ä»¡èROM
+// instruction ROM
 instr_rom instr_rom_inst(
     .clk               ( clk            ),
     .rst_n             ( rst_n          ),

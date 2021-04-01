@@ -114,8 +114,6 @@ video_ram  #(
 // 4. Video memory RAM 		address space 00020000~00020fff
 // 5. User UART 			address space 00030000~00030003
 
-Community Verified icon
-
 naive_bus_router #(
     .N_MASTER          ( 3 ),
     .N_SLAVE           ( 5 ),
