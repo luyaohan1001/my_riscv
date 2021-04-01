@@ -1,0 +1,14 @@
+core_id_segreg
+Pin,Type,Name,Side
+1,input,clk,left
+2,input,rst_n,left
+3,input,i_boot_addr,left
+4,input,i_en,left
+5,input,i_re,left
+6,input,i_ex_jmp,left
+7,input,i_id_jmp,left
+8,input,i_ex_jmp_target,left
+9,input,i_id_jmp_target,left
+10,output,o_pc,right
+11,output,o_instr,right
+12,output,naive_bus.masterbus_master,right

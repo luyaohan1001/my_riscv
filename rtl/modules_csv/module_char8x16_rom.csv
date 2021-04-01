@@ -1,0 +1,5 @@
+char8x16_rom
+Pin,Type,Name,Side
+1,input,clk,left
+2,input,addr,left
+3,output,data,right

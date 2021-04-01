@@ -1,0 +1,270 @@
+Writing sv_modules.lib 1
+Writing sv_modules.lib 2
+Writing sv_modules.lib 3
+Writing sv_modules.lib 4
+Writing sv_modules.lib 5
+Writing sv_modules.lib 6
+Writing sv_modules.lib 7
+
+
+
+-----print all ports in all modules-----
+core_alu
+['port', '[ 6:0]', 'input', 'logic', 'i_opcode']
+['port', '[ 6:0]', 'input', 'logic', 'i_funct7']
+['port', '[ 2:0]', 'input', 'logic', 'i_funct3']
+['port', '[31:0]', 'input', 'logic', 'i_num1u']
+['port', '[31:0]', 'input', 'logic', 'i_num2u']
+['port', '[31:0]', 'input', 'logic', 'i_pc']
+['port', '[31:0]', 'input', 'logic', 'i_immu']
+['port', 1, 'output', 'logic', 'o_branch_jalr']
+['port', '[31:0]', 'output', 'logic', 'o_res']
+['port', '[31:0]', 'output', 'logic', 'o_branch_jalr_target']
+
+
+soc_top
+['parameter', '', 'NA', 'NA', 'UART_RX_CLK_DIV']
+['parameter', '', 'NA', 'NA', 'UART_TX_CLK_DIV']
+['parameter', '', 'NA', 'NA', 'VGA_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'isp_uart_rx']
+['port', 1, 'output', 'logic', 'isp_uart_tx']
+['port', 1, 'output', 'logic', 'vga_hsync']
+['port', 1, 'output', 'logic', 'vga_vsync']
+['port', 1, 'output', 'logic', 'vga_red']
+['port', 1, 'output', 'logic', 'vga_green']
+['port', 1, 'output', 'logic', 'vga_blue']
+
+
+core_regfile
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'input', 'logic', 'rd_latch']
+['port', 1, 'input', 'logic', 'i_re1']
+['port', '[4:0]', 'input', 'logic', 'i_raddr1']
+['port', '[31:0]', 'output', 'logic', 'o_rdata1']
+['port', 1, 'input', 'logic', 'i_re2']
+['port', '[4:0]', 'input', 'logic', 'i_raddr2']
+['port', '[31:0]', 'output', 'logic', 'o_rdata2']
+['port', 1, 'input', 'logic', 'i_forward1']
+['port', '[4:0]', 'input', 'logic', 'i_faddr1']
+['port', '[31:0]', 'input', 'logic', 'i_fdata1']
+['port', 1, 'input', 'logic', 'i_forward2']
+['port', '[4:0]', 'input', 'logic', 'i_faddr2']
+['port', '[31:0]', 'input', 'logic', 'i_fdata2']
+['port', 1, 'input', 'logic', 'i_we']
+['port', '[4:0]', 'input', 'logic', 'i_waddr']
+['port', '[31:0]', 'input', 'logic', 'i_wdata']
+
+
+uart_rx
+['parameter', '', 'NA', 'NA', 'UART_RX_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'i_rx']
+['port', 1, 'output', 'logic', 'o_ready']
+['port', '[7:0]', 'output', 'logic', 'o_data']
+
+
+soc_top_tb
+
+
+char8x16_rom
+['port', 1, 'input', 'logic', 'clk']
+['port', '[11:0]', 'input', 'logic', 'addr']
+['port', '[ 7:0]', 'output', 'logic', 'data']
+
+
+ram128B
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'i_we']
+['port', '[ 6:0]', 'input', 'logic', 'i_addr']
+['port', '[ 7:0]', 'input', 'logic', 'i_wdata']
+['port', '[ 7:0]', 'output', 'logic', 'o_rdata']
+
+
+video_ram
+['parameter', '', 'NA', 'NA', 'VGA_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'output', 'logic', 'o_hsync']
+['port', 1, 'output', 'logic', 'o_vsync']
+['port', 1, 'output', 'logic', 'o_red']
+['port', 1, 'output', 'logic', 'o_green']
+['port', 1, 'output', 'logic', 'o_blue']
+['port', 1, 'output', 'logic', 'naive_bus.slavebus']
+
+
+core_top
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', '[31:0]', 'input', 'logic', 'i_boot_addr']
+['port', '[31:0]', 'input', 'logic', 'naive_bus.masterinstr_master']
+['port', '[31:0]', 'input', 'logic', 'data_master']
+
+
+instr_rom
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'input', 'logic', 'naive_bus.slavebus']
+
+
+user_uart_tx
+['parameter', '', 'NA', 'NA', 'UART_TX_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'output', 'logic', 'o_uart_tx']
+['port', 1, 'output', 'logic', 'naive_bus.slavebus']
+
+
+naive_bus_router
+['parameter', '[7:0]', 'NA', 'NA', '[7:0]N_MASTER']
+['parameter', '[7:0]', 'NA', 'NA', '[7:0]N_SLAVE']
+['parameter', '[0:N_SLAVE-1][31:0]', 'NA', 'NA', '[0:N_SLAVE-1][31:0]SLAVES_MASK']
+['parameter', '[0:N_SLAVE-1][31:0]', 'NA', 'NA', '[0:N_SLAVE-1][31:0]SLAVES_BASE']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', '[N_MASTER-1:0]', 'input', 'logic', 'naive_bus.slavemasters']
+['port', '[ N_SLAVE-1:0]', 'input', 'logic', 'naive_bus.masterslaves']
+
+
+dual_read_port_ram_32x32
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'i_we']
+['port', '[ 4:0]', 'input', 'logic', 'i_waddr']
+['port', '[31:0]', 'input', 'logic', 'i_wdata']
+['port', '[ 4:0]', 'input', 'logic', 'i_raddr1']
+['port', '[31:0]', 'output', 'logic', 'o_rdata1']
+['port', '[ 4:0]', 'input', 'logic', 'i_raddr2']
+['port', '[31:0]', 'output', 'logic', 'o_rdata2']
+
+
+core_bus_wrapper
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'input', 'logic', 'i_re']
+['port', 1, 'input', 'logic', 'i_we']
+['port', 1, 'output', 'logic', 'o_conflict']
+['port', '[ 2:0]', 'input', 'logic', 'i_funct3']
+['port', '[31:0]', 'input', 'logic', 'i_addr']
+['port', '[31:0]', 'input', 'logic', 'i_wdata']
+['port', '[31:0]', 'output', 'logic', 'o_rdata']
+['port', '[31:0]', 'output', 'logic', 'naive_bus.masterbus_master']
+
+
+uart_tx_line
+['parameter', '', 'NA', 'NA', 'UART_TX_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'output', 'logic', 'o_tx']
+['port', 1, 'input', 'logic', 'i_start']
+['port', 1, 'output', 'logic', 'o_fin']
+['port', '[7:0][7:0]', 'input', 'logic', 'i_data']
+
+
+isp_uart
+['parameter', '', 'NA', 'NA', 'UART_RX_CLK_DIV']
+['parameter', '', 'NA', 'NA', 'UART_TX_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'i_uart_rx']
+['port', 1, 'output', 'logic', 'o_uart_tx']
+['port', 1, 'output', 'logic', 'o_rst_n']
+['port', '[31:0]', 'output', 'logic', 'o_boot_addr']
+['port', '[31:0]', 'output', 'logic', 'naive_bus.masterbus']
+['port', '[31:0]', 'output', 'logic', 'naive_bus.slaveuser_uart_bus']
+
+
+ram_bus_wrapper
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'input', 'logic', 'naive_bus.slavebus']
+
+
+core_id_stage
+['port', '[31:0]', 'input', 'logic', 'i_instr']
+['port', 1, 'output', 'logic', 'o_src1_reg_en']
+['port', 1, 'output', 'logic', 'o_src2_reg_en']
+['port', 1, 'output', 'logic', 'o_jal']
+['port', 1, 'output', 'logic', 'o_alures2reg']
+['port', 1, 'output', 'logic', 'o_memory2reg']
+['port', 1, 'output', 'logic', 'o_mem_write']
+['port', '[ 4:0]', 'output', 'logic', 'o_src1_reg_addr']
+['port', '[ 4:0]', 'output', 'logic', 'o_src2_reg_addr']
+['port', '[ 4:0]', 'output', 'logic', 'o_dst_reg_addr']
+['port', '[ 6:0]', 'output', 'logic', 'o_opcode']
+['port', '[ 6:0]', 'output', 'logic', 'o_funct7']
+['port', '[ 2:0]', 'output', 'logic', 'o_funct3']
+['port', '[31:0]', 'output', 'logic', 'o_imm']
+
+
+ram
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'i_we']
+['port', '[ 9:0]', 'input', 'logic', 'i_waddr']
+['port', '[ 9:0]', 'input', 'logic', 'i_raddr']
+['port', '[ 7:0]', 'input', 'logic', 'i_wdata']
+['port', '[ 7:0]', 'output', 'logic', 'o_rdata']
+
+
+vga_char_86x32
+['parameter', '', 'NA', 'NA', 'VGA_CLK_DIV']
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', 1, 'output', 'logic', 'hsync']
+['port', 1, 'output', 'logic', 'vsync']
+['port', 1, 'output', 'logic', 'red']
+['port', 1, 'output', 'logic', 'green']
+['port', 1, 'output', 'logic', 'blue']
+['port', 1, 'output', 'logic', 'req']
+['port', '[11:0]', 'output', 'logic', 'addr']
+['port', '[ 7:0]', 'input', 'logic', 'ascii']
+
+
+core_id_segreg
+['port', 1, 'input', 'logic', 'clk']
+['port', 1, 'input', 'logic', 'rst_n']
+['port', '[31:0]', 'input', 'logic', 'i_boot_addr']
+['port', 1, 'input', 'logic', 'i_en']
+['port', 1, 'input', 'logic', 'i_re']
+['port', 1, 'input', 'logic', 'i_ex_jmp']
+['port', 1, 'input', 'logic', 'i_id_jmp']
+['port', '[31:0]', 'input', 'logic', 'i_ex_jmp_target']
+['port', '[31:0]', 'input', 'logic', 'i_id_jmp_target']
+['port', '[31:0]', 'output', 'logic', 'o_pc']
+['port', '[31:0]', 'output', 'logic', 'o_instr']
+['port', '[31:0]', 'output', 'logic', 'naive_bus.masterbus_master']
+
+
+generating symbol for module module_naive_bus_router.csv
+generating symbol for module module_ram_bus_wrapper.csv
+generating symbol for module module_soc_top_tb.csv
+generating symbol for module module_ram.csv
+generating symbol for module module_uart_rx.csv
+generating symbol for module module_instr_rom.csv
+generating symbol for module module_vga_char_86x32.csv
+generating symbol for module module_core_alu.csvWriting sv_modules.lib 8
+Writing sv_modules.lib 9
+Writing sv_modules.lib 10
+Writing sv_modules.lib 11
+Writing sv_modules.lib 12
+Writing sv_modules.lib 13
+Writing sv_modules.lib 14
+Writing sv_modules.lib 15
+Writing sv_modules.lib 16
+Writing sv_modules.lib 17
+Writing sv_modules.lib 18
+Writing sv_modules.lib 19
+Writing sv_modules.lib 20
+Writing sv_modules.lib 21
+
+generating symbol for module module_core_regfile.csv
+generating symbol for module module_core_id_segreg.csv
+generating symbol for module module_uart_tx_line.csv
+generating symbol for module module_soc_top.csv
+generating symbol for module module_core_id_stage.csv
+generating symbol for module module_video_ram.csv
+generating symbol for module module_user_uart_tx.csv
+generating symbol for module module_ram128B.csv
+generating symbol for module module_isp_uart.csv
+generating symbol for module module_core_bus_wrapper.csv
+generating symbol for module module_core_top.csv
+generating symbol for module module_dual_read_port_ram_32x32.csv
+generating symbol for module module_char8x16_rom.csv

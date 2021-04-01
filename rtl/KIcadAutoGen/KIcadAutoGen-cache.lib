@@ -1,0 +1,106 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# sv_modules_char8x16_rom
+#
+DEF sv_modules_char8x16_rom U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "sv_modules_char8x16_rom" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 800 -200 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X addr 2 0 -100 200 R 50 50 1 1 I
+X data 3 1000 -100 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# sv_modules_core_alu
+#
+DEF sv_modules_core_alu U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "sv_modules_core_alu" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 1800 -700 1 1 0 f
+X i_opcode 1 0 0 200 R 50 50 1 1 I
+X o_branch_jalr_target 10 2000 -400 200 L 50 50 1 1 O
+X i_funct7 2 0 -100 200 R 50 50 1 1 I
+X i_funct3 3 0 -200 200 R 50 50 1 1 I
+X i_num1u 4 0 -300 200 R 50 50 1 1 I
+X i_num2u 5 0 -400 200 R 50 50 1 1 I
+X i_pc 6 0 -500 200 R 50 50 1 1 I
+X i_immu 7 0 -600 200 R 50 50 1 1 I
+X o_branch_jalr 8 2000 -200 200 L 50 50 1 1 O
+X o_res 9 2000 -300 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# sv_modules_core_bus_wrapper
+#
+DEF sv_modules_core_bus_wrapper U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "sv_modules_core_bus_wrapper" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 2100 -700 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X naive_bus.masterbus_master 10 2300 -400 200 L 50 50 1 1 O
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X i_re 3 0 -200 200 R 50 50 1 1 I
+X i_we 4 0 -300 200 R 50 50 1 1 I
+X o_conflict 5 2300 -200 200 L 50 50 1 1 O
+X i_funct3 6 0 -400 200 R 50 50 1 1 I
+X i_addr 7 0 -500 200 R 50 50 1 1 I
+X i_wdata 8 0 -600 200 R 50 50 1 1 I
+X o_rdata 9 2300 -300 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# sv_modules_core_id_segreg
+#
+DEF sv_modules_core_id_segreg U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "sv_modules_core_id_segreg" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 2500 -900 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X o_pc 10 2700 -300 200 L 50 50 1 1 O
+X o_instr 11 2700 -400 200 L 50 50 1 1 O
+X naive_bus.masterbus_master 12 2700 -500 200 L 50 50 1 1 O
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X i_boot_addr 3 0 -200 200 R 50 50 1 1 I
+X i_en 4 0 -300 200 R 50 50 1 1 I
+X i_re 5 0 -400 200 R 50 50 1 1 I
+X i_ex_jmp 6 0 -500 200 R 50 50 1 1 I
+X i_id_jmp 7 0 -600 200 R 50 50 1 1 I
+X i_ex_jmp_target 8 0 -700 200 R 50 50 1 1 I
+X i_id_jmp_target 9 0 -800 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# sv_modules_isp_uart
+#
+DEF sv_modules_isp_uart U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "sv_modules_isp_uart" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 2300 -500 1 1 0 f
+X clk 3 0 -100 200 R 50 50 1 1 I
+X i_uart_rx 4 0 -200 200 R 50 50 1 1 I
+X o_uart_tx 5 2500 0 200 L 50 50 1 1 O
+X o_rst_n 6 2500 -100 200 L 50 50 1 1 O
+X o_boot_addr 7 2500 -200 200 L 50 50 1 1 O
+X naive_bus.masterbus 8 2500 -300 200 L 50 50 1 1 O
+X naive_bus.slaveuser_uart_bus 9 2500 -400 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

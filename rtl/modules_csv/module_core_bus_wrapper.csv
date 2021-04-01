@@ -1,0 +1,12 @@
+core_bus_wrapper
+Pin,Type,Name,Side
+1,input,clk,left
+2,input,rst_n,left
+3,input,i_re,left
+4,input,i_we,left
+5,output,o_conflict,right
+6,input,i_funct3,left
+7,input,i_addr,left
+8,input,i_wdata,left
+9,output,o_rdata,right
+10,output,naive_bus.masterbus_master,right

@@ -1,0 +1,7 @@
+ram128B
+Pin,Type,Name,Side
+1,input,clk,left
+2,input,i_we,left
+3,input,i_addr,left
+4,input,i_wdata,left
+5,output,o_rdata,right

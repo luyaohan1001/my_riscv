@@ -1,0 +1,42 @@
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project trash
+# reading /home/luyao/Softwares/Mentor/questasim/linux_x86_64/../modelsim.ini
+# Loading project my_riscv
+# reading /home/luyao/Softwares/Mentor/questasim/linux_x86_64/../modelsim.ini
+# Loading project my_riscv
+# Compile of char8x16_rom.sv was successful.
+# Compile of core_alu.sv was successful.
+# Compile of core_bus_wrapper.sv was successful.
+# Compile of core_id_segreg.sv was successful.
+# Compile of core_id_stage.sv was successful.
+# Compile of core_regfile.sv was successful.
+# Compile of core_top.sv was successful.
+# Compile of dual_read_port_ram_32x32.sv was successful.
+# Compile of instr_rom.sv was successful.
+# Compile of isp_uart.sv was successful with warnings.
+# Compile of naive_bus.sv was successful.
+# Compile of naive_bus_router.sv was successful with warnings.
+# Compile of ram.sv was successful.
+# Compile of ram128B.sv was successful.
+# Compile of ram_bus_wrapper.sv was successful.
+# Compile of soc_top.sv was successful.
+# Compile of soc_top_tb.sv was successful.
+# Compile of uart_rx.sv was successful.
+# Compile of uart_tx_line.sv was successful with warnings.
+# Compile of user_uart_tx.sv was successful.
+# Compile of vga_char_86x32.sv was successful.
+# Compile of video_ram.sv was successful.
+# 22 compiles, 0 failed with no errors.

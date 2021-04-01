@@ -1,0 +1,539 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/luyao/Projects/uvm_primer_demo/06_Polymorphism
+vchar8x16_rom
+Z0 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z1 !s110 1617318589
+!i10b 1
+!s100 9IcYCcM1i@lD3@C]R05_]0
+IJY3XJ:E?[Y]cL3>4AWQEA0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 char8x16_rom_sv_unit
+S1
+Z3 d/home/luyao/Projects/my_riscv
+Z4 w1616911386
+8/home/luyao/Projects/my_riscv/rtl/char8x16_rom.sv
+F/home/luyao/Projects/my_riscv/rtl/char8x16_rom.sv
+L0 11
+Z5 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z6 !s108 1617318589.000000
+!s107 /home/luyao/Projects/my_riscv/rtl/char8x16_rom.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/char8x16_rom.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vcore_alu
+R0
+R1
+!i10b 1
+!s100 ZXhKnWWakm_3[I1>dl04d0
+IZg];OnSDE:iSXF::ooEEk1
+R2
+!s105 core_alu_sv_unit
+S1
+R3
+w1617304572
+8/home/luyao/Projects/my_riscv/rtl/core_alu.sv
+F/home/luyao/Projects/my_riscv/rtl/core_alu.sv
+L0 5
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_alu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_alu.sv|
+!i113 0
+R7
+R8
+vcore_bus_wrapper
+R0
+R1
+!i10b 1
+!s100 @3dnYL@zn]]EMhi0CalSK1
+IJQaIeODlP`Dk<PASnK1KM0
+R2
+!s105 core_bus_wrapper_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/core_bus_wrapper.sv
+F/home/luyao/Projects/my_riscv/rtl/core_bus_wrapper.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_bus_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_bus_wrapper.sv|
+!i113 0
+R7
+R8
+vcore_id_segreg
+R0
+R1
+!i10b 1
+!s100 1J2Z0D3IW39aoVDA_5SDb3
+I2bgzT7WKP<?7KBJdD[EaF2
+R2
+!s105 core_id_segreg_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/core_id_segreg.sv
+F/home/luyao/Projects/my_riscv/rtl/core_id_segreg.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_id_segreg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_id_segreg.sv|
+!i113 0
+R7
+R8
+vcore_id_stage
+R0
+R1
+!i10b 1
+!s100 GU0=0O>:0^McW_ieaY:`e2
+I4AfR2i@c4I_o6S;F^B?DD3
+R2
+!s105 core_id_stage_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/core_id_stage.sv
+F/home/luyao/Projects/my_riscv/rtl/core_id_stage.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_id_stage.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_id_stage.sv|
+!i113 0
+R7
+R8
+vcore_regfile
+R0
+R1
+!i10b 1
+!s100 ?7JMAh]H=TJf>OBEd^YGa2
+IIn9hIa;j@T84YhGE_^kDW1
+R2
+!s105 core_regfile_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/core_regfile.sv
+F/home/luyao/Projects/my_riscv/rtl/core_regfile.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_regfile.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_regfile.sv|
+!i113 0
+R7
+R8
+vcore_top
+R0
+R1
+!i10b 1
+!s100 N]H=l9;cYk6>[ZH@7O[Qj1
+I34XT0:kL3m;FWj1UbhCKa1
+R2
+!s105 core_top_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/core_top.sv
+F/home/luyao/Projects/my_riscv/rtl/core_top.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/core_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/core_top.sv|
+!i113 0
+R7
+R8
+vdual_read_port_ram_32x32
+R0
+Z9 !s110 1617318590
+!i10b 1
+!s100 d<LlYPzTfnFgj1G;iD[0C3
+IIL^jWV5>L;R^X5?FS;7df1
+R2
+!s105 dual_read_port_ram_32x32_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/dual_read_port_ram_32x32.sv
+F/home/luyao/Projects/my_riscv/rtl/dual_read_port_ram_32x32.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/luyao/Projects/my_riscv/rtl/dual_read_port_ram_32x32.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/dual_read_port_ram_32x32.sv|
+!i113 0
+R7
+R8
+vinstr_rom
+R0
+R9
+!i10b 1
+!s100 afE8777^KQOP4E==F3lWF3
+IMWoeLPjJSJon7D`Cle6oa1
+R2
+!s105 instr_rom_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/instr_rom.sv
+F/home/luyao/Projects/my_riscv/rtl/instr_rom.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z10 !s108 1617318590.000000
+!s107 /home/luyao/Projects/my_riscv/rtl/instr_rom.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/instr_rom.sv|
+!i113 0
+R7
+R8
+visp_uart
+R0
+R9
+!i10b 1
+!s100 ]Hi>1elLZEEd2lHHg==mB1
+I1>zGdJY1Chh`lUm8`m?Pl1
+R2
+!s105 isp_uart_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/isp_uart.sv
+F/home/luyao/Projects/my_riscv/rtl/isp_uart.sv
+L0 3
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/luyao/Projects/my_riscv/rtl/isp_uart.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/isp_uart.sv|
+!i113 0
+R7
+R8
+Ynaive_bus
+R0
+R9
+!i10b 1
+!s100 J_fhLEhCRRiCW[M7S=mo<0
+I@g2m;PVhi6Io^nNL9<VT91
+R2
+!s105 naive_bus_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/naive_bus.sv
+F/home/luyao/Projects/my_riscv/rtl/naive_bus.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/luyao/Projects/my_riscv/rtl/naive_bus.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/naive_bus.sv|
+!i113 0
+R7
+R8
+vnaive_bus_router
+R0
+R9
+!i10b 1
+!s100 ZIh1mEYHeQ4Bo?_9eRI7^2
+IjN`dakYl@;KRMggNI:HJW2
+R2
+!s105 naive_bus_router_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/naive_bus_router.sv
+F/home/luyao/Projects/my_riscv/rtl/naive_bus_router.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/luyao/Projects/my_riscv/rtl/naive_bus_router.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/naive_bus_router.sv|
+!i113 0
+R7
+R8
+vram
+R0
+R9
+!i10b 1
+!s100 CUzn0[YH5EaPhh5L0=HLa0
+IZonblVP54HdiNZF]iYPb20
+R2
+!s105 ram_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/ram.sv
+F/home/luyao/Projects/my_riscv/rtl/ram.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/luyao/Projects/my_riscv/rtl/ram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/ram.sv|
+!i113 0
+R7
+R8
+vram128B
+R0
+Z11 !s110 1617318591
+!i10b 1
+!s100 LF1jzUalhOGCL8]@B6fYB0
+I3:WFjY=h<AlHDCd?jB;9Y3
+R2
+!s105 ram128B_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/ram128B.sv
+F/home/luyao/Projects/my_riscv/rtl/ram128B.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R10
+!s107 /home/luyao/Projects/my_riscv/rtl/ram128B.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/ram128B.sv|
+!i113 0
+R7
+R8
+nram128@b
+vram_bus_wrapper
+R0
+R11
+!i10b 1
+!s100 PS;L=^O?_93UXh?MN[9[D3
+IU@EQKYK3[WI=:mQIE>RoC1
+R2
+!s105 ram_bus_wrapper_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/ram_bus_wrapper.sv
+F/home/luyao/Projects/my_riscv/rtl/ram_bus_wrapper.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z12 !s108 1617318591.000000
+!s107 /home/luyao/Projects/my_riscv/rtl/ram_bus_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/ram_bus_wrapper.sv|
+!i113 0
+R7
+R8
+vsoc_top
+R0
+R11
+!i10b 1
+!s100 o;I;W3CC79Pk[i1eL=TX81
+INKKWzfhLGVW7A0JahF[031
+R2
+!s105 soc_top_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/soc_top.sv
+F/home/luyao/Projects/my_riscv/rtl/soc_top.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/soc_top.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/soc_top.sv|
+!i113 0
+R7
+R8
+vsoc_top_tb
+R0
+R11
+!i10b 1
+!s100 7PCCaT@1R9f[9DKomedM>0
+IE?Wn4JR2?7jKO]F645m<W1
+R2
+!s105 soc_top_tb_sv_unit
+S1
+R3
+w1617318584
+8/home/luyao/Projects/my_riscv/rtl/soc_top_tb.sv
+F/home/luyao/Projects/my_riscv/rtl/soc_top_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/soc_top_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/soc_top_tb.sv|
+!i113 0
+R7
+R8
+vuart_rx
+R0
+R11
+!i10b 1
+!s100 USTJOLTRd8OGm1CI:iZbl0
+IjN6MVD5_k4lo3SJW]VAiS2
+R2
+!s105 uart_rx_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/uart_rx.sv
+F/home/luyao/Projects/my_riscv/rtl/uart_rx.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/uart_rx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/uart_rx.sv|
+!i113 0
+R7
+R8
+vuart_tx_line
+R0
+R11
+!i10b 1
+!s100 @`V`0[:JW:C<RM>Wdb6?T1
+I7RlOa?11ISIl:J?kWXn>G0
+R2
+!s105 uart_tx_line_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/uart_tx_line.sv
+F/home/luyao/Projects/my_riscv/rtl/uart_tx_line.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/uart_tx_line.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/uart_tx_line.sv|
+!i113 0
+R7
+R8
+vuser_uart_tx
+R0
+R11
+!i10b 1
+!s100 f[z1YBN2[J7VLQ3MR`J]21
+II]Q4EoI_Vd]D5S@j^>o363
+R2
+!s105 user_uart_tx_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/user_uart_tx.sv
+F/home/luyao/Projects/my_riscv/rtl/user_uart_tx.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/user_uart_tx.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/user_uart_tx.sv|
+!i113 0
+R7
+R8
+vvga_char_86x32
+R0
+Z13 !s110 1617318592
+!i10b 1
+!s100 91SUm1XQ2flo_M2`MFRd`2
+IKZgoJbS8fLmCKik@9:S8W3
+R2
+!s105 vga_char_86x32_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/vga_char_86x32.sv
+F/home/luyao/Projects/my_riscv/rtl/vga_char_86x32.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/luyao/Projects/my_riscv/rtl/vga_char_86x32.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/vga_char_86x32.sv|
+!i113 0
+R7
+R8
+vvideo_ram
+R0
+R13
+!i10b 1
+!s100 _GCihY^hiCHR9MTj[d;RO2
+Ii_eC42AS1NUoKXL83Zd]e3
+R2
+!s105 video_ram_sv_unit
+S1
+R3
+R4
+8/home/luyao/Projects/my_riscv/rtl/video_ram.sv
+F/home/luyao/Projects/my_riscv/rtl/video_ram.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1617318592.000000
+!s107 /home/luyao/Projects/my_riscv/rtl/video_ram.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/home/luyao/Projects/my_riscv/rtl/video_ram.sv|
+!i113 0
+R7
+R8

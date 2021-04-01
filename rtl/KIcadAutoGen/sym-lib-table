@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name example)(type Legacy)(uri /home/luyao/Projects/my_ustcrv/hardware/RTL/example.lib)(options "")(descr ""))
+  (lib (name sv_modules)(type Legacy)(uri /home/luyao/Projects/my_ustcrv/hardware/RTL/modules_csv/sv_modules.lib)(options "")(descr ""))
+)

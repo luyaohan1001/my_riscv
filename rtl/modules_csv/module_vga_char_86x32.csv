@@ -1,0 +1,12 @@
+vga_char_86x32
+Pin,Type,Name,Side
+2,input,clk,left
+3,input,rst_n,left
+4,output,hsync,right
+5,output,vsync,right
+6,output,red,right
+7,output,green,right
+8,output,blue,right
+9,output,req,right
+10,output,addr,right
+11,input,ascii,left

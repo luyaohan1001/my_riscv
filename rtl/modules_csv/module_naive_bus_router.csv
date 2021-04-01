@@ -1,0 +1,6 @@
+naive_bus_router
+Pin,Type,Name,Side
+5,input,clk,left
+6,input,rst_n,left
+7,input,naive_bus.slavemasters,left
+8,input,naive_bus.masterslaves,left

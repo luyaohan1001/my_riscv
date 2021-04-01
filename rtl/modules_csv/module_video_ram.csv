@@ -1,0 +1,10 @@
+video_ram
+Pin,Type,Name,Side
+2,input,clk,left
+3,input,rst_n,left
+4,output,o_hsync,right
+5,output,o_vsync,right
+6,output,o_red,right
+7,output,o_green,right
+8,output,o_blue,right
+9,output,naive_bus.slavebus,right

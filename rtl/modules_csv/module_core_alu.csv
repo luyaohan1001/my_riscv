@@ -1,0 +1,12 @@
+core_alu
+Pin,Type,Name,Side
+1,input,i_opcode,left
+2,input,i_funct7,left
+3,input,i_funct3,left
+4,input,i_num1u,left
+5,input,i_num2u,left
+6,input,i_pc,left
+7,input,i_immu,left
+8,output,o_branch_jalr,right
+9,output,o_res,right
+10,output,o_branch_jalr_target,right

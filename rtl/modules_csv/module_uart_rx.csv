@@ -1,0 +1,6 @@
+uart_rx
+Pin,Type,Name,Side
+2,input,clk,left
+3,input,i_rx,left
+4,output,o_ready,right
+5,output,o_data,right

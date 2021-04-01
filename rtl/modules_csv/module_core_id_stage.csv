@@ -1,0 +1,16 @@
+core_id_stage
+Pin,Type,Name,Side
+1,input,i_instr,left
+2,output,o_src1_reg_en,right
+3,output,o_src2_reg_en,right
+4,output,o_jal,right
+5,output,o_alures2reg,right
+6,output,o_memory2reg,right
+7,output,o_mem_write,right
+8,output,o_src1_reg_addr,right
+9,output,o_src2_reg_addr,right
+10,output,o_dst_reg_addr,right
+11,output,o_opcode,right
+12,output,o_funct7,right
+13,output,o_funct3,right
+14,output,o_imm,right

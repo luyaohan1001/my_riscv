@@ -1,0 +1,6 @@
+user_uart_tx
+Pin,Type,Name,Side
+2,input,clk,left
+3,input,rst_n,left
+4,output,o_uart_tx,right
+5,output,naive_bus.slavebus,right
