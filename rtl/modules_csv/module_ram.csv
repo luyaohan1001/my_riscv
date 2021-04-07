@@ -1,8 +1,0 @@
-ram
-Pin,Type,Name,Side
-1,input,clk,left
-2,input,i_we,left
-3,input,i_waddr,left
-4,input,i_raddr,left
-5,input,i_wdata,left
-6,output,o_rdata,right

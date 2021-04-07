@@ -1,0 +1,29 @@
+/home/luyao/Projects/my_riscv/rtl/core/core_id_stage.sv {1 {vlog -work work -vopt -sv -stats=none /home/luyao/Projects/my_riscv/rtl/core/core_id_stage.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module core_id_stage
+
+Top level modules:
+	core_id_stage
+
+} {} {}} /home/luyao/Projects/my_riscv/rtl/core/core_id_segreg.sv {1 {vlog -work work -vopt -sv -stats=none /home/luyao/Projects/my_riscv/rtl/core/core_id_segreg.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module core_id_segreg
+
+Top level modules:
+	core_id_segreg
+
+} {} {}} /home/luyao/Projects/my_riscv/rtl/core/core_bus_wrapper.sv {1 {vlog -work work -vopt -sv -stats=none /home/luyao/Projects/my_riscv/rtl/core/core_bus_wrapper.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module core_bus_wrapper
+
+Top level modules:
+	core_bus_wrapper
+
+} {} {}} /home/luyao/Projects/my_riscv/rtl/core/core_regfile.sv {1 {vlog -work work -vopt -sv -stats=none /home/luyao/Projects/my_riscv/rtl/core/core_regfile.sv
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module core_regfile
+
+Top level modules:
+	core_regfile
+
+} {} {}}

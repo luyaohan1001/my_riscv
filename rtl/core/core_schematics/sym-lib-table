@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sv_modules)(type Legacy)(uri /home/luyao/Projects/my_riscv/rtl/core/automated_lib/sv_modules.lib)(options "")(descr ""))
+  (lib (name automated_modules)(type Legacy)(uri /home/luyao/Projects/my_riscv/rtl/core/automated_csv/automated_modules.lib)(options "")(descr ""))
+)

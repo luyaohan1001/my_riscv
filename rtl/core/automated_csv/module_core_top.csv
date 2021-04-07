@@ -4,4 +4,4 @@ Pin,Type,Name,Side
 2,input,rst_n,left
 3,input,i_boot_addr,left
 4,input,naive_bus.masterinstr_master,left
-5,input,data_master,left
+5,input,naive_bus.masterdata_master,left

@@ -1,0 +1,145 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# automated_modules_core_alu
+#
+DEF automated_modules_core_alu U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_alu" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 1800 -700 1 1 0 f
+X i_opcode 1 0 0 200 R 50 50 1 1 I
+X o_branch_jalr_target 10 2000 -400 200 L 50 50 1 1 O
+X i_funct7 2 0 -100 200 R 50 50 1 1 I
+X i_funct3 3 0 -200 200 R 50 50 1 1 I
+X i_num1u 4 0 -300 200 R 50 50 1 1 I
+X i_num2u 5 0 -400 200 R 50 50 1 1 I
+X i_pc 6 0 -500 200 R 50 50 1 1 I
+X i_immu 7 0 -600 200 R 50 50 1 1 I
+X o_branch_jalr 8 2000 -200 200 L 50 50 1 1 O
+X o_res 9 2000 -300 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# automated_modules_core_bus_wrapper
+#
+DEF automated_modules_core_bus_wrapper U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_bus_wrapper" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 2100 -700 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X naive_bus.masterbus_master 10 2300 -400 200 L 50 50 1 1 O
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X i_re 3 0 -200 200 R 50 50 1 1 I
+X i_we 4 0 -300 200 R 50 50 1 1 I
+X o_conflict 5 2300 -200 200 L 50 50 1 1 O
+X i_funct3 6 0 -400 200 R 50 50 1 1 I
+X i_addr 7 0 -500 200 R 50 50 1 1 I
+X i_wdata 8 0 -600 200 R 50 50 1 1 I
+X o_rdata 9 2300 -300 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# automated_modules_core_id_segreg
+#
+DEF automated_modules_core_id_segreg U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_id_segreg" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 2500 -900 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X o_pc 10 2700 -300 200 L 50 50 1 1 O
+X o_instr 11 2700 -400 200 L 50 50 1 1 O
+X naive_bus.masterbus_master 12 2700 -500 200 L 50 50 1 1 O
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X i_boot_addr 3 0 -200 200 R 50 50 1 1 I
+X i_en 4 0 -300 200 R 50 50 1 1 I
+X i_re 5 0 -400 200 R 50 50 1 1 I
+X i_ex_jmp 6 0 -500 200 R 50 50 1 1 I
+X i_id_jmp 7 0 -600 200 R 50 50 1 1 I
+X i_ex_jmp_target 8 0 -700 200 R 50 50 1 1 I
+X i_id_jmp_target 9 0 -800 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# automated_modules_core_id_stage
+#
+DEF automated_modules_core_id_stage U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_id_stage" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 1600 -1300 1 1 0 f
+X i_instr 1 0 -600 200 R 50 50 1 1 I
+X o_dst_reg_addr 10 1800 -800 200 L 50 50 1 1 O
+X o_opcode 11 1800 -900 200 L 50 50 1 1 O
+X o_funct7 12 1800 -1000 200 L 50 50 1 1 O
+X o_funct3 13 1800 -1100 200 L 50 50 1 1 O
+X o_imm 14 1800 -1200 200 L 50 50 1 1 O
+X o_src1_reg_en 2 1800 0 200 L 50 50 1 1 O
+X o_src2_reg_en 3 1800 -100 200 L 50 50 1 1 O
+X o_jal 4 1800 -200 200 L 50 50 1 1 O
+X o_alures2reg 5 1800 -300 200 L 50 50 1 1 O
+X o_memory2reg 6 1800 -400 200 L 50 50 1 1 O
+X o_mem_write 7 1800 -500 200 L 50 50 1 1 O
+X o_src1_reg_addr 8 1800 -600 200 L 50 50 1 1 O
+X o_src2_reg_addr 9 1800 -700 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# automated_modules_core_regfile
+#
+DEF automated_modules_core_regfile U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_regfile" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 1300 -1600 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X i_forward1 10 0 -700 200 R 50 50 1 1 I
+X i_faddr1 11 0 -800 200 R 50 50 1 1 I
+X i_fdata1 12 0 -900 200 R 50 50 1 1 I
+X i_forward2 13 0 -1000 200 R 50 50 1 1 I
+X i_faddr2 14 0 -1100 200 R 50 50 1 1 I
+X i_fdata2 15 0 -1200 200 R 50 50 1 1 I
+X i_we 16 0 -1300 200 R 50 50 1 1 I
+X i_waddr 17 0 -1400 200 R 50 50 1 1 I
+X i_wdata 18 0 -1500 200 R 50 50 1 1 I
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X rd_latch 3 0 -200 200 R 50 50 1 1 I
+X i_re1 4 0 -300 200 R 50 50 1 1 I
+X i_raddr1 5 0 -400 200 R 50 50 1 1 I
+X o_rdata1 6 1500 -700 200 L 50 50 1 1 O
+X i_re2 7 0 -500 200 R 50 50 1 1 I
+X i_raddr2 8 0 -600 200 R 50 50 1 1 I
+X o_rdata2 9 1500 -800 200 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# automated_modules_core_top
+#
+DEF automated_modules_core_top U 0 40 Y Y 1 L N
+F0 "U" 200 250 60 H V L CNN
+F1 "automated_modules_core_top" 200 150 60 H V L CNN
+F2 "" 200 50 60 H I L CNN
+F3 "" 200 -150 60 H I L CNN
+DRAW
+S 200 100 1700 -500 1 1 0 f
+X clk 1 0 0 200 R 50 50 1 1 I
+X rst_n 2 0 -100 200 R 50 50 1 1 I
+X i_boot_addr 3 0 -200 200 R 50 50 1 1 I
+X naive_bus.masterinstr_master 4 0 -300 200 R 50 50 1 1 I
+X naive_bus.masterdata_master 5 0 -400 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

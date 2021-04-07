@@ -1,7 +1,0 @@
-uart_tx_line
-Pin,Type,Name,Side
-2,input,clk,left
-3,output,o_tx,right
-4,input,i_start,left
-5,output,o_fin,right
-6,input,i_data,left

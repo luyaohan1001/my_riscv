@@ -1,3 +1,13 @@
+/*
+In the soc_top the following modules are instantiated:
+1. isp_uart
+2. core_top 
+3. instr_rom // instruction rom
+4. ram_bus_wrapper  // instruction ram 
+5. ram_bus_wrapper // data ram (data and instr ram using same module definition)
+6. video_ram // video ram
+7 .naive_bus_router // naive bus
+*/
 
 
 
@@ -66,7 +76,7 @@ instr_rom instr_rom_inst(
 
 
 
-// instruction RAM 
+// instruction ram 
 ram_bus_wrapper instr_ram_inst(
     .clk               ( clk            ),
     .rst_n             ( rst_n          ),
@@ -127,4 +137,45 @@ naive_bus_router #(
 );
 
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

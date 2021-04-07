@@ -1,9 +1,0 @@
-isp_uart
-Pin,Type,Name,Side
-3,input,clk,left
-4,input,i_uart_rx,left
-5,output,o_uart_tx,right
-6,output,o_rst_n,right
-7,output,o_boot_addr,right
-8,output,naive_bus.masterbus,right
-9,output,naive_bus.slaveuser_uart_bus,right
